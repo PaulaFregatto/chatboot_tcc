@@ -9,7 +9,6 @@ O fluxo foi inicialmente criado no LangFlow, adaptado depois para código Python
 │
 ├── src/
 │   ├── main.py           # Script principal do chatbot
-│
 ├── utils/
 │   ├── functions.py      # Funções auxiliares (classificação, fluxo)
 │
