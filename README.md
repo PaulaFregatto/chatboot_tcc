@@ -1,40 +1,81 @@
-🤖 Chatbot Inteligente para Direcionamento de Leads
+# 🤖 Chatbot Inteligente com Técnicas de PLN  
+### *Projeto do TCC — Direcionamento Automático de Leads*
 
-TCC – Inteligência Artificial aplicada ao atendimento ao cliente
+Este repositório contém o código-fonte, documentação e arquitetura do meu Trabalho de Conclusão de Curso, cujo objetivo foi desenvolver um **chatbot inteligente**, baseado em **Processamento de Linguagem Natural (PLN)**, capaz de **redirecionar leads automaticamente para os setores apropriados**, aumentando eficiência, velocidade de resposta e qualidade no atendimento.
 
-Este projeto implementa um chatbot desenvolvido em Python, utilizando técnicas de Processamento de Linguagem Natural (PLN) para classificar e direcionar leads automaticamente para os setores apropriados.
-O fluxo foi inicialmente criado no LangFlow, adaptado depois para código Python puro.
+---
 
+## 📌 Objetivo do Projeto
+
+Criar um sistema capaz de:
+
+- Interpretar mensagens de usuários usando PLN  
+- Classificar intenções e categorias de atendimento  
+- Direcionar leads automaticamente  
+- Manter rastreabilidade das conversas  
+- Operar com baixo custo e alta escalabilidade  
+- Ser simples de integrar a sistemas existentes
+
+---
+
+## 🧠 Arquitetura da Solução
+
+A inteligência da aplicação foi planejada e prototipada inicialmente no **LangFlow**, utilizando:
+
+- Embeddings  
+- Classificação por Similaridade  
+- Prompt Nodes  
+- Memory Buffer  
+- RAG simplificado  
+- Lógica de decisão por nós encadeados  
+
+Abaixo está o **fluxograma oficial** extraído do protótipo no LangFlow:
+
+![Fluxograma LangFlow](docs/fluxo_langflow.png)
+
+---
+
+## 🗂️ Estrutura do Projeto
 📦 chatboot_tcc/
-│
 ├── src/
-│   ├── main.py           # Script principal do chatbot
-├── utils/
-│   ├── functions.py      # Funções auxiliares (classificação, fluxo)
-│
-├── models/              # Modelos de embeddings e vetorização
-│
-├── data/                # Dados utilizados para treinamento/teste
-│
-├── docs/                # Diagramas, fluxos e documentação
-│
-├── requirements.txt     # Dependências do projeto
-│
+│ ├── main.py
+│ └── utils/
+│ └── functions.py
+├── models/
+│ └── intents.json
+├── data/
+│ └── samples/
+├── docs/
+│ ├── fluxo_langflow.png
+│ └── arquitetura.md
+├── requirements.txt
 └── README.md
 
-🧠 Tecnologias utilizadas
+---
 
-Python 3.10+
-LangFlow (para prototipação do fluxo)
-FastAPI (planejado para versão web da API)
-Embeddings + classificação
-Git + GitHub (versão controlada)
-WSL2 + VSCode (ambiente de desenvolvimento moderno)
+## 🛠️ Tecnologias Utilizadas
 
-🚀 Objetivo
+- **Python 3.10**
+- **FastAPI** (API do chatbot)
+- **LangFlow** (protótipo de fluxo)
+- **OpenAI / HuggingFace Embeddings**
+- **RAG simplificado**
+- **Classificação de intenção**
+- **WSL + VSCode** para ambiente profissional
+- **Git + GitHub** para versionamento
 
-Criar um chatbot capaz de entender a intenção do cliente aplicar lógica de classificação direcionar automaticamente para:
-Comercial
-Suporte Técnico
-Financeiro
-Outros setores
+---
+
+## ▶️ Como executar o projeto
+
+### 1. Criar e ativar o ambiente virtual
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+
+✨ Autora
+
+Paula Fregatto
+Especialista em IA, Vendas em TI e Projetos de Inovação.
+Conecte-se comigo no LinkedIn:
+🔗 https://www.linkedin.com/in/paulaeflima/
